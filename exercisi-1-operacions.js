@@ -20,6 +20,3 @@ const dividir = (n1,n2) => {
 //console.log(dividir(10,5));
 
 module.exports = multiplicar;
-
-
-//Crea els tests corresponents per verificar el funcionament de l'exercici Async / Await N1 E2.

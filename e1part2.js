@@ -58,3 +58,23 @@ const getSalary = (id) => {
 module.exports.getEmployee = getEmployee;
 module.exports.getSalary = getSalary;
 
+
+
+//Crea els tests corresponents per verificar el funcionament de l'exercici Async / Await N1 E2.
+
+
+
+function slowPromise() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(`I am resolved`);
+        }, 2000);
+    });
+}
+async function asyncFunc() {
+    return result = await slowPromise();
+}
+
+
+module.exports.slowPromise = slowPromise;
+module.exports.asyncFunc = asyncFunc;

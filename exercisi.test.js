@@ -40,3 +40,7 @@ test('Promise salary testing', () => {
         expect(res).toStrictEqual({id:1, salary: 1000})
     } )
 })
+test('Async test', async () => {
+    const data = await exercisiuDos.asyncFunc();
+    expect(data).toStrictEqual(`I am resolved`);
+})
