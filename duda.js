@@ -1,5 +1,5 @@
-/* Por qué esto no funciona
--> No era equalTo && .then must be outside returning an obj
+/*
+-> Resuelta para uso: no era equalTo && .then must be outside returning an obj
 
 const getEmployee = (id) => {
     return new Promise((resolve, reject) => {
