@@ -1,0 +1,14 @@
+{
+  "name": "exercisi-5",
+  "version": "1.0.0",
+  "description": "exercisi 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Pedro Barquin",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
