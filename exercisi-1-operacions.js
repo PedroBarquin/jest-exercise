@@ -19,4 +19,7 @@ const dividir = (n1,n2) => {
 //console.log(multiplicar(3,8));
 //console.log(dividir(10,5));
 
-module.exports = multiplicar;
+module.exports.multiplicar = multiplicar;
+module.exports.sumar = sumar;
+module.exports.restar = restar;
+module.exports.dividir = dividir;

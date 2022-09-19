@@ -34,7 +34,7 @@ let salaries = [{
             return res;
         })
 }*/
-
+/*
 const getEmployee = (id) => {
     return new Promise((resolve, reject) => {
         const employeeFound = employees.find(e => e.id === id);
@@ -53,6 +53,22 @@ const getSalary = (id) => {
             ? resolve(salary)
             :  reject(onmessageerror(`Rejected ${id}`));
     })
+}*/
+
+getEmployee = (id) => {
+    return new Promise((resolve,reject) => { 
+        let employeeFound = employees.find(e => e.id === id)
+        employeeFound ? resolve(employeeFound) 
+                    : reject(console.log(`Error on employeeFound ${employeeFound}`))
+        .catch((err) => console.log(`Error ${err}`))} )
+   
+}
+getSalary = (id) => {
+    return new Promise((resolve,reject) => { 
+        let salaryFound = salaries.find(e => e.id === id)
+        salaryFound ? resolve(salaryFound) 
+                    : reject(console.log(`Error on salaryFound ${salaryFound}`))
+        .catch((err) => console.log(`Error ${err}`))})
 }
 
 module.exports.getEmployee = getEmployee;
